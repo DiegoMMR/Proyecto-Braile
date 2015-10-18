@@ -1,0 +1,9 @@
+#paginacion {
+  border: 0px solid #CCC;
+  background-color: #ffffff;
+  padding: .5em;
+  overflow: hidden;
+}
+ 
+.derecha   { float: right; }
+.izquierda { float: none;  }
