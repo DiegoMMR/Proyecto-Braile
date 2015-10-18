@@ -1,6 +1,6 @@
 //Funcion para buscar la imagen;
 function getImage (name) {
-	return "<img src = 'img/" + name + ".png'/>" + name
+	return "<img src = 'img/" + name + ".jpg'/>" + name
 }
 //funcion para convertir los textos deseados en braile.
 function convertir () {
