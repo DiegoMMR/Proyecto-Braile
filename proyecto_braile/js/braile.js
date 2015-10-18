@@ -28,11 +28,17 @@ for (var i = 0; i < lista.length ; i++) {
 		console.log(lista)
 	}
 	//CIERRE DE INTERROGACION
-		else if (lista[i] == "?") {
+		else if (lista[i] == "?" || lista[i] == "¿") {
 
 		html+= "<span class='izquierda'>" + getImage("interrogacion")+ "</span>"
 		console.log(lista)
 	}
+	else if (lista[i] == "!" || lista[i] == "¡") {
+
+		html+= "<span class='izquierda'>" + getImage("exclamacion")+ "</span>"
+		console.log(lista)
+	}
+
 	//PARA LETRAS.
 	else {
 	var currentDiv = document.getElementById("output_text")
