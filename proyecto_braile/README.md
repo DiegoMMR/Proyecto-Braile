@@ -1,2 +1,2 @@
 ### braile
-Este proyecto convierte de español a braile usando umagenes.
+Este proyecto convierte de español a braile usando imagenes.
