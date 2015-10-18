@@ -24,13 +24,13 @@ for (var i = 0; i < lista.length ; i++) {
 	//LOS ASTERISCOS
 	else if (lista[i] == "*") {
 
-		html+= "<span class='izquierda'>" + getImage("Asterisk")+ "</span>"
+		html+= "<span class='izquierda'>" + getImage("asterisco")+ "</span>"
 		console.log(lista)
 	}
 	//CIERRE DE INTERROGACION
 		else if (lista[i] == "?") {
 
-		html+= "<span class='izquierda'>" + getImage("fininterrogacion")+ "</span>"
+		html+= "<span class='izquierda'>" + getImage("interrogacion")+ "</span>"
 		console.log(lista)
 	}
 	//PARA LETRAS.
