@@ -4,40 +4,40 @@
 <html>
 	<!-- se refiere al  cabeza de la pagina-->
 	<head>
-	<!-- agrega el icono de la pagina-->
-	<link rel="icon" href="icono.ico" />
+		<!--pone el icono -->
+		<link rel="icon" href="icono.ico" />
 		<!-- titulo que lleva la pagina-->
 		<title> Convertidor de Braile </title>
 	</head>
 	<!-- cuerpo de la pagina aqui estan todos los textos-->
 	<body>
 		<!-- centra el contenido-->
-		<center>
-	
-		<!-- div se refiere a que esto sera un bloque indivual-->
-		<div class="container" id="Title">
-		<!-- titulo-->
-			<h1>Convertidor de Braile</h1>
-		</div>
-			<font size="5">
-		<div class="container" id="input">
-			<!-- area `para ingreso de texto-->
-			<textarea id="input_text" rows="4" cols="50"></textarea>
-		</div>
+		<center>			
+			<!-- div se refiere a que esto sera un bloque indivual-->
+			<div class="container" id="Title">
+				<h4 >0900-14-824 Pablo Anddres Hernandez Gomez <br/>
+				0900-15-10590 Diego Mauricio Mendez Rivera</h4>
+			<!-- titulo-->
+				<h1>Convertidor de Braile</h1>
+			</div>
+				<font size="5">
+				<div class="container" id="input">
+				<!-- area `para ingreso de texto-->
+					<textarea id="input_text" rows="4" cols="50"></textarea>
+				</div>
+				<div class="container" id="button">
+				<!-- Botton Convertir-->
+					<input id="button" type="button" value="convertir" onclick="convertir()"/>		
+				</div>
+				<!-- Div donde aparece todos resultados-->
+				<div id="output_text">
 
-		<div class="container" id="button">
-			<!-- Botton Convertir-->
-			<input id="button" type="button" value="convertir" onclick="convertir()"/>
-		</div>
-			<!-- Div donde aparece todos resultados-->
-		<div id="output_text">
-
-		</div>
-		<!--para usar javascript siempre se tiene que llamar en el HTML-->
-	<script src="js/braile.js"></script>
-	<!-- Para usar CSS siempre se tiene que llamar en el HTML-->
-	<link rel="stylesheet" type="text/css" href="css/Braile.css" media="screen" />
-	</font>
-	</center>
+				</div>
+				<!--para usar javascript siempre se tiene que llamar en el HTML-->
+				<script src="js/braile.js"></script>
+				<!-- Para usar CSS siempre se tiene que llamar en el HTML-->
+				<link rel="stylesheet" type="text/css" href="css/Braile.css" media="screen" />
+			</font>
+		</center>
 	</body>
 </html>

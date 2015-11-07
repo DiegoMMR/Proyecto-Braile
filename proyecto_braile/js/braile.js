@@ -1,3 +1,4 @@
+var num = false;
 //Funcion para buscar la imagen;
 function getImage (name) {
 	return "<img src = 'img/" + name + ".jpg'/>" + name
@@ -20,25 +21,48 @@ for (var i = 0; i < lista.length ; i++) {
 	//IF PARA SABER LOS ESPACIOS EMTRE LETRAS
 	if (lista[i] == " "){
 		html+= "<span class='izquierda'><p>  </p>  </span>"
+		num = false;
 	}
 	//LOS ASTERISCOS
 	else if (lista[i] == "*") {
-
+		var currentDiv = document.getElementById("output_text")
 		html+= "<span class='izquierda'>" + getImage("asterisco")+ "</span>"
 		console.log(lista)
+		num = false;
 	}
 	//CIERRE DE INTERROGACION
 		else if (lista[i] == "?" || lista[i] == "¿") {
-
-		html+= "<span class='izquierda'>" + getImage("interrogacion")+ "</span>"
+			var currentDiv = document.getElementById("output_text")
+		html+= "<span class='izquierda'>" + getImage("ininterrogacion")+ "</span>"
 		console.log(lista)
+		num = false;
 	}
-	else if (lista[i] == "!" || lista[i] == "¡") {
-
-		html+= "<span class='izquierda'>" + getImage("exclamacion")+ "</span>"
+	else if (lista[i] >= "A" && lista[i] <= "Z") {
+		var currentDiv = document.getElementById("output_text")
+		html+= "<span class='izquierda'>" + getImage("mayus") + "</span>"
+		html+= "<span class='izquierda'>" + getImage(lista[i])+ "</span>"
 		console.log(lista)
+		num = false;
 	}
-
+	else if (lista[i] >= "0" && lista[i] <= "9") {
+		var currentDiv = document.getElementById("output_text")
+		if (num == false){
+		html+= "<span class='izquierda'>" + getImage("num") + "</span>"
+		num = true;
+		}
+		html+= "<span class='izquierda'>" + getImage(lista[i]) + "</span>"
+		console.log("Carlos")
+	}	else if (lista[i] == /"/) {
+		var currentDiv = document.getElementById("output_text")
+		html+= "<span class='izquierda'>" + getImage("comiillas")+ "</span>"
+		console.log(lista)
+		num = false;
+	}	else if (lista[i] == ":") {
+		var currentDiv = document.getElementById("output_text")
+		html+= "<span class='izquierda'>" + getImage("2puntos")+ "</span>"
+		console.log(lista)
+		num = false;
+	}
 	//PARA LETRAS.
 	else {
 	var currentDiv = document.getElementById("output_text")
